@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>JARVIS</title>
+      <link rel="stylesheet" href="index_j.css">
+      <script type="text/javascript">
+        function openInterface(form){
+         if( form.username.value == "Arman" && form.password.value == "123"){
+          window.location.href=("main_interface_j.html");
+         }
+         else{
+          var jarvisAnswer = new Audio("audio/login.mp3");
+          jarvisAnswer.play();
+           alert("The username or password you entered don't match!!!");
+         }
+         }
+       </script>
+  </head>
+<body>
+  <div id="overlay">
+      <div class="container">
+           <div class="bg circle">
+           <div class="outermost circle"></div>
+           <div class="outer circle"></div>
+           <div class="middle circle"></div>
+           <div class="middle2 circle"></div>
+           <div class="middle3 circle"></div>
+           <div class="inner circle"></div>
+           <div class="innermost3 circle"></div>
+           <div class="innermost2 circle"></div>
+           <div class="innermost circle"></div>
+      </div>
+      </div>
+  </div>
+  <div>
+<section class="stark-login">
+  <form name="validation_j">
+    <div id="fade-box">
+      <input type="text" name="username" id="username" placeholder="USERNAME">
+      <input type="password" name="password" id="password" placeholder="PASSWORD">
+      <input type="button" name="submitbtn" id="submitbtn" value="LOGIN" onclick="openInterface(this.form)">
+    </div>
+  </form>
+</section>
+</div>
+</script>
+</body>
+</html>

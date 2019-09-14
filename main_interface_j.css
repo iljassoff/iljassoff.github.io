@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+}
+
+#overlay{
+background: #000000;
+position: fixed; 
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 999;
+}
+
+.container{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.circle{
+border-radius: 50%;
+}
+
+.bg{
+width: 300px;
+height: 300px;
+background: #000000;
+border: solid 5px #00fffd;
+}
+.outermost{
+    width: 255px;
+    height: 255px;
+    border: solid 10px #000000;
+    border-bottom: solid 10px #00fffd;
+    border-left: solid 10px #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 5s linear infinite;
+
+}
+.outer{
+    width: 250px;
+    height: 250px;
+    border: solid 5px #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 5s linear infinite;
+
+}
+.middle{
+    width: 215px;
+    height: 215px;
+    border: solid 12px #000000;
+    border-bottom: solid 12px #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    animation: spin 3.5s linear infinite reverse;
+}
+.middle2{
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.middle3{
+    width: 205px;
+    height: 205px;
+    border: solid 30px #000000;
+    border-top: solid 30px #00fffd;
+    border-right: solid 30px #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.7;
+    animation: spin 3.5s linear infinite;
+
+}
+.inner{
+    width: 140px;
+    height: 140px;
+    border: solid 5px #00fffd;
+    border-bottom: solid 5px #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    animation: spin 3.5s linear infinite;
+
+}
+.innermost3{
+    width: 35px;
+    height: 35px;
+    background: #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.innermost2{
+    width: 80px;
+    height: 80px;
+    border: solid 13px  #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.innermost{
+    width: 115px;
+    height: 115px;
+    border: solid 13px  #00fffd;
+    border-top: solid 13px #000000;
+    border-bottom: solid 13px #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 3.5s linear infinite reverse;
+
+}
+@keyframes spin{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+#fade-box{
+    animation: input-entry 3s ease-in;
+    animation-delay: 50s;
+    z-index: 1000;
+}
+
+.stark-login form{
+    animation: input-entry 3s ease-in-out;
+    animation-delay: 50s;
+    background: #111111;
+    background: linear-gradient(#004746, #111111);
+    border: 6px solid #00fffd;
+    box-shadow: 0 0 0 5px #00fffd;
+    border-radius: 5px;
+    height: 220px;
+    width: 500px;
+    margin: 20px auto 0;
+    position: relative;
+    z-index: 1000;
+    transition: 1s all;
+}
+
+.stark-login form:hover{
+    border: 6px solid #00fffd;
+    box-shadow: 0 0 15px #00fffd;
+    transition: 1s all;
+}
+
+.stark-login input{
+    background: #222222;
+    background: linear-gradient(#333333, #222222);
+    border: 1px solid #444444;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #000000;
+    color: #888888;
+    display: block;
+    font-family: Cabin, helvetica, Arial, sans-serif;
+    height: 40px;
+    width: 400px;
+    font-size: 14px;
+    margin: 20px auto 10px;
+    padding: 0 10px;
+    text-shadow: 0 -1px 0 #000000;
+}
+
+#submitbtn:hover{
+    background: #00fffd;
+
+}
