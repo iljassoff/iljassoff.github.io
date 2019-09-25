@@ -8,8 +8,7 @@
       <link rel="stylesheet" href="main_interface.css">
   </head>
 <body>
-  <iframe id="iframeAudio" src="audio/intro.mp3" allow="autoplay" style="display:none"></iframe>
-  <audio autoplay  id="playAudio"><source src="audio/intro.mp3"></audio>
+    <audio id="my_audio" src="audio/intro.mp3" loop="loop"></audio>
   <div class="menu">
     <ul>
       <li><a href="#Home">HOME</a></li>
@@ -49,16 +48,9 @@
            </div>
       </div>
   </div>
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.js"></script>
-   <script>
-    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-    if(!isChrome){
-      $('#iframeAudio').remove()
-    }
-  else{
-     $('#playAudio').remove() 
-  }
+  <script>
+    window.onload = function() {
+    document.getElementById("my_audio").play();}
   </script>
 </body>
 </html>
