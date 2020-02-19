@@ -354,7 +354,7 @@ animation: spin 10s linear infinite reverse;
 }
 .menu ul li 
 {
-    margin: 40px;
+    margin: 20px;
     list-style-type: none;
 }
 .menu ul li a
@@ -370,7 +370,7 @@ animation: spin 10s linear infinite reverse;
 }
 .submenu ul li
 {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 .menu ul li:hover .submenu
 {
