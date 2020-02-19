@@ -188,7 +188,191 @@ animation: spin 10s linear infinite reverse;
 {
     display: block;
 }
-@media (max-width: 479px)
+@media (max-width: 1080px)
 {
+ body{
+    background: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#overlay{
+background: #000000;
+position: absolute; 
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 300px;
+height: 300px;
+}
+.container{
+width: 300px;
+height: 300px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.circle{
+border-radius: 50%;
+}
+.bg{
+width: 200px;
+height: 200px;
+background: #000000;
+border: dashed 5px #00fffd;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+animation: spin 10s linear infinite reverse;
+}
+.outermost{
+    width: 155px;
+    height: 155px;
+    border: solid 10px #000000;
+    border-bottom: solid 10px #00fffd;
+    border-left: solid 10px #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 5s linear infinite;
 
+}
+.outer{
+    width: 150px;
+    height: 150px;
+    border: solid 5px #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 5s linear infinite reverse;
+
+}
+.middle{
+    width: 115px;
+    height: 115px;
+    border: solid 12px #000000;
+    border-bottom: solid 12px #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    animation: spin 3.5s linear infinite;
+}
+.middle2{
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 3.5s linear infinite reverse;
+}
+
+.middle3{
+    width: 105px;
+    height: 105px;
+    border: solid 30px #000000;
+    border-top: solid 30px #00fffd;
+    border-right: solid 30px #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.7;
+    animation: spin 3.5s linear infinite reverse;
+
+}
+.inner{
+    width: 40px;
+    height: 40px;
+    border: solid 5px #00fffd;
+    border-bottom: solid 5px #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    animation: spin 3.5s linear infinite;
+
+}
+.innermost3{
+    width: 3px;
+    height: 3px;
+    background: #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.innermost2{
+    width: 8px;
+    height: 8px;
+    border: solid 13px  #00fffd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.innermost{
+    width: 15px;
+    height: 15px;
+    border: solid 13px  #00fffd;
+    border-top: solid 13px #000000;
+    border-bottom: solid 13px #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 3.5s linear infinite reverse;
+
+}
+@keyframes spin{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.menu
+{
+    top: 0;
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+.menu>ul
+{
+    display: flex;
+}
+.menu ul li 
+{
+    margin: 40px;
+    list-style-type: none;
+}
+.menu ul li a
+{
+    text-decoration: none;
+    color: #00fffd;
+}
+.submenu
+{
+    display: none;
+    position: absolute;
+    color: #00fffd;
+}
+.submenu ul li
+{
+    margin: 20px 0;
+}
+.menu ul li:hover .submenu
+{
+    display: block;
+}
 }
