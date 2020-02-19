@@ -46,5 +46,6 @@ h3{
     width: 300px;
     border: aqua solid 2px;
     overflow: scroll;
+    justify-content: center;
     }
 }
