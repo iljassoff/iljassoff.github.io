@@ -54,4 +54,7 @@ h3{
     overflow: scroll;
     justify-content: center;
     }
+.cv h1{
+    text-align: center;
+}
 }
