@@ -37,3 +37,14 @@ h3{
     from, to { border-color: transparent }
     50% { border-color: #00ffff}
   }
+@media (max-width: 1080px)
+{
+.cv{
+    margin: 0 auto;
+    padding: 30px;
+    height: 100vh;
+    width: 400px;
+    border: aqua solid 2px;
+    overflow: scroll;
+    }
+}
