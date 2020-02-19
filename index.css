@@ -194,6 +194,7 @@ animation: spin 10s linear infinite reverse;
     background: #000000;
     font-family: 'Times New Roman', Times, serif;
     font-size: 10px;
+    font-weight: bold;
 }
 #overlay{
 background: #000000;
