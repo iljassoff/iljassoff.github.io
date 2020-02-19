@@ -194,6 +194,7 @@ animation: spin 10s linear infinite reverse;
     background: #000000;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+    font-size: 10px;
 }
 #overlay{
 background: #000000;
@@ -300,8 +301,8 @@ animation: spin 10s linear infinite reverse;
 
 }
 .innermost3{
-    width: 3px;
-    height: 3px;
+    width: 10px;
+    height: 10px;
     background: #00fffd;
     position: absolute;
     top: 50%;
@@ -310,8 +311,8 @@ animation: spin 10s linear infinite reverse;
 
 }
 .innermost2{
-    width: 8px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
     border: solid 13px  #00fffd;
     position: absolute;
     top: 50%;
@@ -319,8 +320,8 @@ animation: spin 10s linear infinite reverse;
     transform: translate(-50%,-50%);
 }
 .innermost{
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border: solid 13px  #00fffd;
     border-top: solid 13px #000000;
     border-bottom: solid 13px #000000;
