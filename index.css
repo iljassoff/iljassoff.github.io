@@ -187,5 +187,8 @@ animation: spin 10s linear infinite reverse;
 .menu ul li:hover .submenu
 {
     display: block;
-    z-index: 1;
+}
+@media (max-width: 479px)
+{
+
 }
