@@ -1,0 +1,112 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+section
+{
+    height: 100vh;
+    background: #000000;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #f00, #f00, #0f0, #0ff, #ff0,#0ff);
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+video
+{
+    object-fit: cover;
+}
+h1
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+}
+h1 span
+{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+h1 :nth-child(1)
+{
+    animation-delay: 1s;
+    color: #f00;
+}
+h1 :nth-child(2)
+{
+    animation-delay: 1.5s;
+    color: #f00;
+}
+h1 :nth-child(3)
+{
+    animation-delay: 2s;
+    color: #0f0;
+}
+h1 :nth-child(4)
+{
+    animation-delay: 2.5s;
+    color: #0f0;
+}
+h1 :nth-child(5)
+{
+    animation-delay: 3s;
+    color: #0ff;
+}
+h1 :nth-child(6)
+{
+    animation-delay: 3.5s;
+    color:  #0ff;
+}
+h1 :nth-child(7)
+{
+    animation-delay: 4s;
+    color: #0ff;
+}
+h1 :nth-child(8)
+{
+    animation-delay: 4.5s;
+    color: #0f0;
+}
+h1 :nth-child(9)
+{
+    animation-delay: 5s;
+    color: #ff0;
+}
+h1 :nth-child(10)
+{
+    animation-delay: 5.5s;
+    color: #ff0;
+}
