@@ -53,6 +53,7 @@ h3{
     border: aqua solid 1px;
     overflow: none;
     justify-content: center;
+    text-align: center;
     }
 .cv h1{
     text-align: center;
