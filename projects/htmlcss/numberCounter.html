@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="numberCounter.css">
+    <title>Number Counter</title>
+</head>
+<body>
+        <div class="welcome">
+                <h2>Welcome</h2>
+        </div>
+    <section>
+        <div class="loader"></div>
+        <div class="count"></div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+          var count = 0;
+          var counter = setInterval(function(){
+          if(count<101){
+             $('.count').text(count + '%');
+             $('.loader').css('width', count + '%');
+             count++
+          }
+          else
+          {
+              clearInterval(counter)
+          }
+        },80)
+      })
+    </script>
+</body>
+</html>

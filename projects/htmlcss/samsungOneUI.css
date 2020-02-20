@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.samsung
+{
+    position: relative;
+    width: 295px;
+    height: 650px;
+    background: #121212;
+    border-radius: 40px;
+}
+
+.screen
+{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 6px;
+    right: 6px;
+    background: #000000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.screen:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.05);
+    transform: skewX(-15deg);
+    z-index: 1;
+}
+
+.screen img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0;
+}
+
+.screen:hover img
+{
+    opacity: 1;
+  
+}

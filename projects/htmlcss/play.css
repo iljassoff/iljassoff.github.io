@@ -1,0 +1,35 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+#header{
+    position: absolute;
+    height: 5rem;
+    width: 100vw;
+    background: #7524f7;
+    display: block;
+    text-align: center;
+    padding: auto;
+}
+.wrap{
+    top: 5rem;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #f7a324;
+}
+.col{
+    height: 100%;
+    width: 33.3%;
+    padding: 2rem;
+}
+#left{
+    background: #2bf024
+}
+#middle{
+    background: #cc0fcc
+}
+#right{
+    background: #24b4f7;
+}
