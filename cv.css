@@ -47,11 +47,11 @@ h3{
     color: #00ffff;
 }
 .cv{
-    margin: 0 auto;
+    margin: auto;
     height: 100vh;
     width: 300px;
-    border: aqua solid 2px;
-    overflow: scroll;
+    border: aqua solid 1px;
+    overflow: none;
     justify-content: center;
     }
 .cv h1{
