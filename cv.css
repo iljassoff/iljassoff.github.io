@@ -49,6 +49,7 @@ h3{
 .cv{
     left: 0;
     right: 0;
+    Font-size: 10px;
     height: 100vh;
     width: 400px;
     border: aqua solid 1px;
