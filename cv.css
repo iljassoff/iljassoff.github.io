@@ -47,15 +47,16 @@ h3{
     color: #00ffff;
 }
 .cv{
-    margin: 0;
+    left: 0;
+    right: 0;
     height: 100vh;
-    width: 600px;
+    width: 400px;
     border: aqua solid 1px;
     overflow: none;
     text-align: center;
     }
 .cv h1{
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
 }
 }
