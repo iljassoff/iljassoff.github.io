@@ -51,13 +51,12 @@ h3{
     right: 0;
     font-size: 10px;
     height: 100vh;
-    width: 400px;
+    width: 300px;
     border: aqua solid 1px;
     overflow: none;
     text-align: center;
     }
 .cv h1{
     text-align: center;
-    margin: 0 auto;
 }
 }
