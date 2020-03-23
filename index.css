@@ -16,12 +16,12 @@ bottom: 0;
 left: 0;
 right: 0;
 margin: auto;
-width: 400px;
-height: 400px;
+width: 350px;
+height: 350px;
 }
 .container{
-width: 400px;
-height: 400px;
+width: 350px;
+height: 350px;
 position: absolute;
 top: 50%;
 left: 50%;
@@ -31,8 +31,8 @@ transform: translate(-50%,-50%);
 border-radius: 50%;
 }
 .bg{
-width: 300px;
-height: 300px;
+width: 250px;
+height: 250px;
 background: #000000;
 border: dashed 5px #00fffd;
 position: absolute;
@@ -42,8 +42,8 @@ transform: translate(-50%,-50%);
 animation: spin 10s linear infinite reverse;
 }
 .outermost{
-    width: 255px;
-    height: 255px;
+    width: 205px;
+    height: 205px;
     border: solid 10px #000000;
     border-bottom: solid 10px #00fffd;
     border-left: solid 10px #00fffd;
@@ -55,8 +55,8 @@ animation: spin 10s linear infinite reverse;
 
 }
 .outer{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border: solid 5px #00fffd;
     position: absolute;
     top: 50%;
@@ -66,8 +66,8 @@ animation: spin 10s linear infinite reverse;
 
 }
 .middle{
-    width: 215px;
-    height: 215px;
+    width: 165px;
+    height: 165px;
     border: solid 12px #000000;
     border-bottom: solid 12px #00fffd;
     position: absolute;
@@ -77,8 +77,8 @@ animation: spin 10s linear infinite reverse;
     animation: spin 3.5s linear infinite;
 }
 .middle2{
-    width: 215px;
-    height: 215px;
+    width: 165px;
+    height: 165px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,8 +87,8 @@ animation: spin 10s linear infinite reverse;
 }
 
 .middle3{
-    width: 205px;
-    height: 205px;
+    width: 155px;
+    height: 155px;
     border: solid 30px #000000;
     border-top: solid 30px #00fffd;
     border-right: solid 30px #00fffd;
@@ -101,8 +101,8 @@ animation: spin 10s linear infinite reverse;
 
 }
 .inner{
-    width: 140px;
-    height: 140px;
+    width: 75px;
+    height: 75px;
     border: solid 5px #00fffd;
     border-bottom: solid 5px #000000;
     position: absolute;
