@@ -109,7 +109,7 @@ animation: spin 10s linear infinite reverse;
 .inner{
     width: 140px;
     height: 140px;
-    border: solid 5px #00fffd;
+    border: dashed 5px #00fffd;
     border-bottom: solid 5px #000000;
     position: absolute;
     top: 50%;
