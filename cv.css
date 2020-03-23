@@ -57,6 +57,9 @@ h3{
     text-align: center;
     }
 .cv h1{
+    left: -50%;
+    right: -50%;
+    margin: auto;
     text-align: center;
 }
 }
