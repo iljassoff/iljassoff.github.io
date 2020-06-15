@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <title>Eyes follow mouse</title>
+      <link rel="stylesheet" href="StyleEyesFollowMouse.css">
+  </head>
+<body>
+    <div class="eyebrows">
+        <div class="eyebrow"></div>
+        <div class="eyebrow"></div>
+    </div>
+    <div class="eyelids">
+        <div class="eyelid"></div>
+        <div class="eyelid"></div>
+    </div>    
+ <div class="eyes">
+     <div class="eye">
+         <div class="ball"></div>
+    </div>
+     <div class="eye">
+         <div class="ball"></div>
+     </div>
+ </div>
+ <script>
+    var balls = document.getElementsByClassName("ball");
+    document.onmousemove = function myFunk (){
+        var x = event.clientX * 100 / window.innerWidth + "%";
+        var y = event.clientY * 100 / window.innerHeight + "%";
+
+        for(var i=0;i<2;i++){
+            balls[i].style.left = x;
+            balls[i].style.top = y;
+            balls[i].style.transform = "translate(-"+x+",-"+y+")";
+        }
+    }
+ </script>
+</body>
+</html>
